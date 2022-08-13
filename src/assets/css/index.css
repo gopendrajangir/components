@@ -67,6 +67,11 @@ body {
   background-color: orange;
 }
 
+.range-slider__input::-moz-range-progress {
+  -moz-appearance: none;
+  height: 0px;
+}
+
 .range-slider__input::-moz-range-thumb {
   -moz-appearance: none;
   height: 20px;
