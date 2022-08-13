@@ -8,8 +8,8 @@ function SingleKnobSlider({ max }: SingleKnobSliderProps) {
   const [value, setValue] = useState(5);
 
   return (
-    <div className="flex h-2 w-80 bg-slate-300 rounded relative">
-      <div className="h-full bg-amber-400 absolute left-0 top-0 rounded" style={{ width: `${(value / max) * 100}%` }}></div>
+    <div className="flex items-center h-0.5 w-80 bg-slate-200 rounded relative">
+      <div className="h-1 bg-teal-100 absolute rounded" style={{ width: `${(value / max) * 100}%` }}></div>
       <input
         type="range"
         name="range"

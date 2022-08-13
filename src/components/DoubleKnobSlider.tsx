@@ -9,8 +9,8 @@ function DoubleKnobSlider({ max }: DoubleKnobSliderProps) {
   const [rightValue, setRightValue] = useState(8);
 
   return (
-    <div className="flex items-center h-2 w-80 bg-slate-300 rounded relative">
-      <div className="h-full bg-amber-400 absolute left-0 top-0 rounded" style={{ width: `${((rightValue - leftValue) / max) * 100}%`, left: `${(leftValue / max) * 100}%` }}></div>
+    <div className="flex items-center h-0.5 w-80 bg-slate-200 rounded relative">
+      <div className="h-1 bg-teal-100 absolute left-0 rounded" style={{ width: `${((rightValue - leftValue) / max) * 100}%`, left: `${(leftValue / max) * 100}%` }}></div>
       <input
         type="range"
         name="range"
