@@ -35,7 +35,7 @@ body {
 }
 
 
-/* Single Knob Range Slider */
+/* Range Slider */
 
 .range-slider__input {
   -webkit-appearance: none;
@@ -79,4 +79,17 @@ body {
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+/* Range Number Input */
+
+.range-number_input::-webkit-outer-spin-button,
+.range-number_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.range-number_input {
+  -moz-appearance: textfield;
 }

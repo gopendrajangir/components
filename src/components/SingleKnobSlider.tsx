@@ -1,10 +1,11 @@
 import { useState } from 'react'
 
 interface SingleKnobSliderProps {
-  max: number
+  max: number;
+  min: number;
 }
 
-function SingleKnobSlider({ max }: SingleKnobSliderProps) {
+function SingleKnobSlider({ min, max }: SingleKnobSliderProps) {
   const [value, setValue] = useState(5);
 
   return (
@@ -14,7 +15,7 @@ function SingleKnobSlider({ max }: SingleKnobSliderProps) {
         type="range"
         name="range"
         id="range"
-        min="0"
+        min={min}
         max={max}
         value={value}
         className="range-slider__input cursor-pointer bg-transparent w-80 z-10"
